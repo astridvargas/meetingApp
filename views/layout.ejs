@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Limoni</title>
+        <!-- <title>Limoni</title> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Adding Materialize -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Adding Google fonts -->
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i,900|Staatliches&display=swap" rel="stylesheet">
+
+        <!-- My own CSS -->
+
+        <link rel="stylesheet" href="/css/limoni.css">
+
+        <!-- Added normalize -->
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header class="site-header container">
+            <a href="/">
+                <img src="/img/limoni.jpg" alt="logo">
+            </a>
+
+            <nav class="nav blue-text text-darken-2">
+                <a href="#">Create a group</a>
+                <a href="/login">Log in</a>
+                <a href="/create-account">Sign up</a>
+            </nav>
+        </header>
+
+        <!-- Add error Messages... Really hard..... :| -->
+
+        <% if(locals.messages) { %>
+            <% const category = Object.keys(locals.messages) %>
+            <% if(category.length) { %>
+                <% locals.messages[category].forEach(alert => { %>
+                    <div class="alerts">
+                        <p class="alert <%= category %>"> <%= alert %> </p>
+                    </div>
+
+                <% }) %>
+            <% } %>
+        <% } %>
+
+        <% %>
+
+        <!-- Display the body of the project -->
+
+        <%- body %>
+
+        
+        <!-- <script src="" async defer></script> -->
+    </body>
+</html>

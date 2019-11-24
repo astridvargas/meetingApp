@@ -1,0 +1,12 @@
+{
+    "name": "CS 313 Project",
+    "description": "A copy of meetup app",
+    "repository": "https://git.heroku.com/fathomless-eyrie-13122.git",
+    "logo": "",
+    "keywords": [
+        "node",
+        "express",
+        "heroku"
+    ],
+    "image": "heroku/node.js"
+}
