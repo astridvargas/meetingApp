@@ -22,6 +22,9 @@ const session = require('express-session');
 // Import cookie parser
 const cookieParser = require('cookie-parser');
 
+// Create port
+const PORT = process.env.PORT || 5000;
+
 // Import Exprss Validator/
 // const { check, validationResult } = require('express-validator');
 
