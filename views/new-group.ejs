@@ -1,0 +1,38 @@
+<main class="container container-forms no-padding">
+    <h1> <%= pageName %> </h1>
+
+    <form action="/new-group" method="POST">
+        <div class="area">
+            <label for="">Name</label>
+            <input type="text" name="name" placeholder="Groupd Name">
+        </div>
+
+        <div class="area description">
+            <label for="">Description</label>
+            <div>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="area">
+            <select>
+                <option value="" selected disabled>--Chose a category--</option>
+                <% categories.forEach(category => { %>
+                    <option value="<%= category.id %>"> <%= category.name %> </option>
+                <% }) %>
+            </select>
+            <label for="">Category</label>
+        </div>
+
+        <div class="area">
+            <label for="">Picture</label>
+            <input type="file" name="picture">
+        </div>
+
+        <div class="area send">
+            <input type="submit" name="createGroup" id="createGroup" value="Create Group" class="btn btn-dark-blue">
+        </div>
+    </form>
+</main>
+
+<script src="../public/javascript/select.js"></script>

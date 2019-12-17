@@ -13,6 +13,22 @@ h1 {
     margin: 0 auto;
 }
 
+main.container-forms {
+    max-width: 900px;
+    width:95%;
+    padding: 5rem 0;
+}
+
+.edit-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
 img {
     max-width: 100%;
 }
@@ -153,6 +169,19 @@ main.form-container {
 .btn-dark-blue {
     background-color: #253237;
 }
+.btn-blue {
+    background-color: #33658A;
+}
+.btn-mustard {
+    background-color: #F6AE2D;
+}
+.btn-green {
+    background-color: #758E4F;
+}
+.btn-red {
+    background-color: #BD1E1E;
+}
+
 
 /* Alerts Style */
 
@@ -175,4 +204,109 @@ main.form-container {
 }
 .success {
     background-color: #023618;
+}
+
+/* Panel */
+
+.panel-admin {
+    padding: 4rem 0;
+}
+
+/* Button Container */
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.btn-container a {
+    margin-bottom: 1rem;
+}
+
+@media (min-width:768px) {
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-container a {
+        flex: 1;
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+    .btn-container a:last-of-type{
+        margin-right: 0;
+    }
+}
+
+/* Admin Section */
+
+.section-admin{
+    padding-top: 2rem;
+}
+.section-admin li {
+    padding: 1rem 0;
+    border-bottom:  1px solid #E6E6E6;
+}
+
+.section-admin li:last-of-type{
+    border-bottom: none;
+}
+@media (min-width:768px) {
+    .section-admin li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+.section-admin .date,
+.section-admin h3 {
+    margin: 0;
+}
+
+/* Info Admin */
+
+.admin-info {
+    flex: 0 0 35%;
+    margin-right: 2rem;
+}
+.admin-info small {
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+/* Date */
+
+.card .date,
+.informacion-admin .date {
+    font-size: .8rem;
+}
+
+aside .date {
+    background-image: url(../img/icono-hora.svg);
+    margin-bottom: 2rem;
+}
+
+/* Action */
+
+.action.btn-container  {
+    width: 100%;
+}
+
+/* Hero */
+
+.hero {
+    height: 38rem;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero h1 {
+    max-width:800px;
+    color: white;
 }

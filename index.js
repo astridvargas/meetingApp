@@ -31,6 +31,8 @@ const PORT = process.env.PORT || 5000;
 // Add and config of db
 const db = require('./config/db');
 require('./models/User');
+require('./models/Categories');
+require('./models/Groups');
 db.sync().then(() => console.log('DB connected')).catch((error) => console.log(error));
 
 // Variables
